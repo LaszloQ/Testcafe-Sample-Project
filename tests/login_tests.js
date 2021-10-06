@@ -5,7 +5,6 @@ import ProductPage from '../pages/products_page';
 
 
 fixture`Log in`
-    .page(baseUrl)
     .beforeEach(async t => {
         await t.maximizeWindow()
     })
