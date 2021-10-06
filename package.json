@@ -1,0 +1,29 @@
+{
+  "name": "testcafe-sample-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LaszloQ/Testcafe-Sample-Project.git"
+  },
+  "keywords": [
+    "Testcafe",
+    "Web",
+    "Automation",
+    "QA"
+  ],
+  "author": "Laszlo Kiss",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LaszloQ/Testcafe-Sample-Project/issues"
+  },
+  "homepage": "https://github.com/LaszloQ/Testcafe-Sample-Project#readme",
+  "devDependencies": {
+    "dotenv": "^10.0.0",
+    "testcafe": "^1.16.1"
+  }
+}
