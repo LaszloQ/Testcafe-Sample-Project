@@ -15,7 +15,11 @@ class LoginPage {
     async typePassword(t, password) {
         await t.typeText(this.passwordInput, password, {replace:true})
     }
-}
+
+    async clickLoginButton(t) {
+        await t.click(this.loginButton)
+    }
+};
 
 
 export default new LoginPage();
