@@ -21,8 +21,3 @@ test(`Log in with valid credentials`, async t => {
         .expect(url).eql(`${baseUrl}${inventory}`)
         .expect(isProductsVisible).eql(true)
 });
-
-
-test.skip(`Receive error on invalid credentials`, async t => {
-
-});
