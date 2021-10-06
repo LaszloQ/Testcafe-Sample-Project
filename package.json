@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "chrome": "testcafe chrome -S -s screenshots tests"
   },
   "repository": {
     "type": "git",
