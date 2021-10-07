@@ -20,13 +20,11 @@ export default class Product {
         }
     }
 
-
     async addToCart() {
         await t.click(this.addToCartButton)
     }
 
-
-    async removeFromCartButton() {
+    async removeFromCart() {
         await t.click(this.removeFromCartButton)
     }
 }
