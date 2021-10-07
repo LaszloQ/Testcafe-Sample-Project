@@ -6,6 +6,7 @@ class LoginPage {
         this.userInput = Selector('#user-name');
         this.passwordInput = Selector('#password');
         this.loginButton = Selector('#login-button');
+        this.errorContainer = Selector('.error-message-container');
     }
 
     async typeUser(username) {
