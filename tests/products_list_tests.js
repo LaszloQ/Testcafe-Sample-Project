@@ -12,7 +12,7 @@ fixture`Products list`
     });
 
 
-test(`Any item can be added to the shopping cart`, async t => {
+test(`Any item can be added to the shopping cart from the product list page`, async t => {
     const noOfItems = await ProductsListPage.inventoryItems.count;
     const randomProduct = new Product(Math.floor(Math.random() * noOfItems));
     const productDetails = await randomProduct.getDetails();

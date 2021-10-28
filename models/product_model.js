@@ -27,4 +27,8 @@ export default class Product {
     async removeFromCart() {
         await t.click(this.removeFromCartButton)
     }
+
+    async enterDetailPage() {
+        await t.click(this.name)
+    }
 }
