@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "chrome": "testcafe chrome -S -s screenshots tests"
+    "chrome": "testcafe chrome -S -s screenshots tests --reporter html:reports/results.html"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,7 @@
   "homepage": "https://github.com/LaszloQ/Testcafe-Sample-Project#readme",
   "devDependencies": {
     "dotenv": "^10.0.0",
-    "testcafe": "^1.16.1"
+    "testcafe": "^1.16.1",
+    "testcafe-reporter-html": "^1.4.6"
   }
 }
