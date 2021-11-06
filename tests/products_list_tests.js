@@ -34,3 +34,27 @@ test(`Any item can be added to the shopping cart from the product list page`, as
     //compare name, decription and price from product list page with shopping cart
     await t.expect(productDetails).eql(cartItemDetails)
 });
+
+
+test(`Items can be sorted in A-Z order`, async t => {
+    await ProductsListPage.sortProductsBy('az');
+
+    const productNamesAfterSort = await ProductsListPage.getAllProductNames();
+    const sortedNameOrder = [...productNamesAfterSort].sort();
+
+    await t.expect(productNamesAfterSort).eql(sortedNameOrder)
+});
+
+
+test(`Items can be sorted in Z-A order`, async t => {
+    const initialList = await ProductsListPage.getAllProductNames();
+
+    await ProductsListPage.sortProductsBy('za');
+
+    const productNamesAfterSort = await ProductsListPage.getAllProductNames();
+    const sortedNameOrder = [...productNamesAfterSort].sort().reverse();
+
+    await t
+        .expect(productNamesAfterSort).eql(sortedNameOrder)
+        .expect(productNamesAfterSort).notEql(initialList)
+});
